@@ -9,7 +9,7 @@
  * Credit  papmuziko, github.com/hs-hq/_putchar.c
  */
 
-int putchar(int c)
+int _putchar(int c)
 {
   return(write(1, &c, 1));
 }
