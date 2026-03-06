@@ -1,13 +1,4 @@
-#include "_putchar.c"
-
-int print_alphabet_x10(void);
-
-int main(void)
-{
-print_alphabet_x10();
-return (0);
-}
-
+#include "main.h"
 
 int print_alphabet_x10(void)
 {

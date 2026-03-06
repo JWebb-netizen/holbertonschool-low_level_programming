@@ -1,21 +1,14 @@
-#include "_putchar.c"
-
-int _islower();
-
-int main(void)
-{
-_islower();
-return (0);
-}
+#include "main.h"
 
 int _islower(int c)
 {
 if (c >= 0x61 && c <= 0x7A)
 {
-return (1);
+_putchar(1);
 }
 else
 {
-return (0);
+_putchar(0);
 }
+return (0);
 }
