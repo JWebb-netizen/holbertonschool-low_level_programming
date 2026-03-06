@@ -1,5 +1,5 @@
-#ifndef _putchar
-#define _putchar
+#ifndef main
+#define main
 
 int _putchar(char c);
 
