@@ -1,6 +1,6 @@
-#include "_putchar.c"
+#include "main.h"
 
-int _isalpha(int c)
+int _isalpha(char c)
 {
 while (c > 0x40 && c < 0x7B)
 {

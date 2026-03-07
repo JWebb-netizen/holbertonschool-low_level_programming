@@ -2,13 +2,13 @@
 
 int _islower(char c)
 {
-if (c >= 0x61 && c <= 0x7A)
+if (c <= 0x61 || c >= 0x7A)
 {
-_putchar('1');
+return (0);
 }
 else
 {
-_putchar('0');
+return (1);
 }
 return (0);
 }
