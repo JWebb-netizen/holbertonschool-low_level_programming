@@ -1,0 +1,13 @@
+#include "main.h"
+
+int main(void)
+{
+int r;
+
+print_last_digit();
+print_last_digit();
+r = print_last_digit();
+_putchar('0' + r);
+_putchar('\n');
+return (0);
+}
