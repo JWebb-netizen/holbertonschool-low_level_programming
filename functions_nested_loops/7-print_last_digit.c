@@ -26,5 +26,5 @@ else if (r % 10 + 1 == 8)
 _putchar('8');
 else if (r % 10 + 1 == 9)
 _putchar('9');
- return (r % 10 + 1);
+return (r % 10 + 1);
 }
