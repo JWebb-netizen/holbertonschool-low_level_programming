@@ -1,0 +1,39 @@
+#include "main.h"
+void times_table(void)
+{
+int i, row, col, a, b;
+a = b = i = 0;
+row = col = 0;
+for (row = 0; row <= 9; row++)
+{
+while (col <= 9)
+{
+i = row * col;
+b = i % 10;
+a = (i / 10) % 10;
+if (col == 0)
+_putchar(b + '0');
+else if (a == 0)
+{
+_putchar(' ');
+_putchar(' ');
+_putchar(b + '0');
+}
+else
+{
+_putchar(' ');
+_putchar(a + '0');
+_putchar(b + '0');
+}
+if (col < 9)
+{
+_putchar(',');
+}
+col++;
+a = b = i = 0;
+}
+col = 0;
+_putchar('\n');
+}
+return;
+}
