@@ -1,0 +1,23 @@
+#include "main.h"
+
+void more_numbers(void)
+{
+int a = 0, b = 0, i = 0, n = 0;
+for (n = 0; n <= 9; n++)
+{
+while (i <= 14)
+{
+b = i % 10;
+a = (i / 10) % 10;
+if (a == 0)
+;
+else
+_putchar(a + '0');
+_putchar(b + '0');
+i++;
+}
+_putchar('\n');
+i = 0;
+}
+return;
+}
