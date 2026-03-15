@@ -1,0 +1,14 @@
+#include "main.h"
+
+int _strlen(char *s)
+{
+	int x = 0;
+	char y = 0;
+	
+	while (y != '!')
+	{
+		y = *(s + x);
+		x++;
+		       }
+	return (x);
+}

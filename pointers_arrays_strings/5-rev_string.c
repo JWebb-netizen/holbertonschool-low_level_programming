@@ -1,0 +1,32 @@
+#include "main.h"
+
+void rev_string(char *s)
+{
+	int x, d;
+	char f[10] = {0};
+	char a;
+d = 0;
+a = 0;
+
+for (x = 0; *s != '\0'; s++)
+x++;
+x--;
+while (x >= 0)
+{
+	a = *(s + x);
+	_putchar(a);
+	_putchar('#');
+	f[d] = a;
+	_putchar(f[d]);
+	_putchar(' ');
+	_putchar(x + '0');
+	_putchar(' ');
+	_putchar(d + '0');
+	_putchar('\n');
+	d++;
+	x--;
+	if (x < 0)
+		break;
+}
+return;
+}

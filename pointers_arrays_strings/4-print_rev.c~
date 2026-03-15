@@ -1,0 +1,17 @@
+#include "main.h"
+
+void print_rev(char *str)
+{
+int x, c;
+c = 0;
+
+for (x = 0; *str != '\0'; str++)
+x++;
+for (c = x; *str >= 0; str--)
+{
+_putchar(*str);
+c--;
+}
+_putchar('\n');
+return;
+}
