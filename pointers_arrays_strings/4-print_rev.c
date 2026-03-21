@@ -2,16 +2,18 @@
 
 void print_rev(char *str)
 {
-int x, c;
-c = 0;
-
+int x;
+char a[1000] = {0};
 for (x = 0; *str != '\0'; str++)
-x++;
-x--;
-for (c = x; *str >= 0; str--)
 {
-_putchar(*str);
-c--;
+	a[x] = *str;
+	x++;
+}
+x--;
+while (x >= 0)
+{
+_putchar(a[x]);
+x--;
 }
 _putchar('\n');
 return;
